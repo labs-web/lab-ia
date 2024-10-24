@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html dir="ltr" lang="{{ site.locale | default: " en-US" }}">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/presentation/dist/reveal.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/presentation/dist/theme/solicode.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/presentation.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/customPresentation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <title> Présentation </title>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-visibility="counted" data-markdown data-separator="<!-- new slide -->"
+                data-separator-vertical="<!-- new detail-->" data-separator-notes="^<!-- note -->">
+                <textarea data-template>
+                        {{ content  }}
+                    </textarea>
+            </section>
+        </div>
+    </div>
+</body>
+<script src="{{ site.baseurl }}/assets/presentation/plugin/markdown/markdown.js"></script>
+<script src="{{ site.baseurl }}/assets/presentation/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin@2.3.0/plugin/mermaid/mermaid.js"></script>
+
+
+</html>
