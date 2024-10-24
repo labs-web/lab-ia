@@ -3,13 +3,14 @@ layout: rapport
 order: 1
 ---
 
-# Rapports et présentations
+# Rapports
 
-## Rapport global
+<a href="/{{site.data.lab_info.lab_reference}}/rapport_global/rapport"> Rapport globale </a> 
 
-- [Rapport global](http://127.0.0.1:4000/prototype/packages/) 
-- [Présentation global](http://127.0.0.1:4000/prototype/packages/presentation.html) 
+## Par packages
 
-## Package 1 
-- [Rapport-package1](http://127.0.0.1:4000/prototype/packages/package1) 
-- [Présentation-package1](http://127.0.0.1:4000/prototype/packages/package1/presentation.html) 
+<ul>
+  {% for package in site.data.lab_info.packages %}
+    <li> <a href="/{{site.data.lab_info.lab_reference}}/{{ package.name }}/rapport"> {{ package.titre }} </a> </li>
+  {% endfor %}
+</ul>
